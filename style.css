@@ -34,12 +34,36 @@ img {
   max-width: 100%;
 }
 
+:focus {
+  outline: 3px solid var(--color-turquoise);
+  outline-offset: 3px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5em 2.5em;
+  background: var(--color-black);
+  color: var(--color-turquoise);
+  text-decoration: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-radius: 15px;
+  font-weight: var(--fontweight-bold);
+  transition: transform 200ms ease-in-out;
+  letter-spacing: 2px;
+  margin-top: 2em;
+}
+
+.btn:hover {
+  transform: scale(1.2);
+}
+
 section {
-  padding: 3em 3.7em;
+  padding: 4em 3.7em;
 }
 
 .section__title {
-  margin-bottom: 0.25em;
+  margin-bottom: 0.4em;
 }
 
 .section__title--introduction {
@@ -114,6 +138,51 @@ nav {
   }
 }
 
+/* My services  */
+
+.my-services {
+  background: var(--color-turquoise);
+  background-image: url(./assets/myservices-background-3.jpg);
+  background-size: cover;
+  background-blend-mode: multiply;
+  color: var(--color-white);
+  text-align: center;
+}
+
+.section__title--services {
+  color: var(--color-white);
+  position: relative;
+}
+/* We can create the small underline in the title with after  */
+.section__title--services::after {
+  content: "";
+  display: block;
+  width: 5em;
+  height: 1px;
+  margin: 0.5em auto 1em;
+  background: currentColor;
+  opacity: 0.5;
+}
+
+.service {
+  max-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 1em;
+}
+
+@media (min-width: 800px) {
+  .services {
+    display: flex;
+    justify-content: space-around;
+    /* max-width: 1000px; */
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .service + .services {
+    margin-left: 2em;
+  }
+}
 /* About me */
 
 /* .about-me__image {
