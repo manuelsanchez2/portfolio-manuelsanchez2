@@ -3,7 +3,155 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Manuel Sanchez Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <!-- <div class="logo">
+        <img src="" alt="" />
+      </div> -->
+      <p>{Manuel}</p>
+    </header>
+    <button class="nav-toggle" aria-label="toggle navigation">
+      <span class="hamburger"></span>
+    </button>
+    <!-- Navigations bar -->
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+        <li class="nav__item">
+          <a href="#services" class="nav__link">My Services</a>
+        </li>
+        <li class="nav__item">
+          <a href="about" class="nav__link">About me</a>
+        </li>
+        <li class="nav__item"><a href="work" class="nav__link">My Work</a></li>
+      </ul>
+    </nav>
+
+    <!-- Introduction -->
+    <section class="introduction" id="home">
+      <h1 class="section__title section__title--introduction">
+        Hi, I am <strong>Manuel Sanchez</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">Front-end Dev</p>
+      <img
+        src="img/manuel-sanchez-intro.png"
+        alt="a picture of Manuel Sanchez"
+      />
+    </section>
+
+    <!-- My Services -->
+    <section class="my-services" id="services">
+      <h2 class="section__title section__title--services">My specialities</h2>
+      <div class="services">
+        <div class="service">
+          <h3>Web Development</h3>
+          <p>
+            By using a combination of HTML5, CSS3 and JavaScript (with the help
+            of ReactJs), I create beatiful web sites and apps of every kind.
+          </p>
+        </div>
+        <div class="service">
+          <h3>Layout and Design</h3>
+          <p>
+            Do you have something in mind but do not really know to make it
+            real? You are not alone! Contact me and we will try to create a
+            design that exactly reflects what you want
+          </p>
+        </div>
+        <div class="service">
+          <h3>SEO Expertise</h3>
+          <p>
+            Everyday we are bombed with messages on the importance of being well
+            positioned on Google. Do you have a problem with your project? Then
+            let's see together what is missing in your strategy!
+          </p>
+        </div>
+        <!-- Closing the last service -->
+      </div>
+      <!-- Closing services -->
+    </section>
+    <!-- About me -->
+    <section class="about-me" id="about">
+      <h2 class="section__title section__title--about">Who I am</h2>
+      <p class="section__subtitle section__subtitle--about"></p>
+      <div class="about-me__body">
+        <p>
+          As for all who are reading this: words matter. I have been studying
+          Linguistics for so long, so I know what I am talking about.
+        </p>
+        <p>
+          The way we express words is pivotal but the way we actually portray
+          those words make the difference between a remarkable message and a
+          message that gets lost in the depth of our minds.
+        </p>
+      </div>
+      <img src="img/manuel-sanchez-about.png" alt="picture of manuel sanchez" />
+    </section>
+    <!-- My work -->
+    <section class="my-work" id="work">
+      <h2 class="section__title">My work</h2>
+      <p class="section__subtitle"></p>
+
+      <div class="portfolio">
+        <a href="#" class="portfolio__item">
+          <img
+            src="img/portfolio-01.jpg"
+            alt="my-portfolio"
+            class="portfolio__image"
+          />
+        </a>
+        <a href="#" class="portfolio__item">
+          <img
+            src="img/portfolio-01.jpg"
+            alt="my-portfolio"
+            class="portfolio__image"
+          />
+        </a>
+        <a href="#" class="portfolio__item">
+          <img
+            src="img/portfolio-01.jpg"
+            alt="my-portfolio"
+            class="portfolio__image"
+          />
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer  -->
+    <footer>
+      <a href="mailto:manusansan22@gmail.com" class="footer__link"
+        >manusansan22@gmail.com</a
+      >
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a class="social-list__link" href="ENLACE A GITHUB">a</a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="ENLACE A LINKEDIN">b</a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="ENLACE A FACEBOOK">c</a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="ENLACE A GITHUB">d</a>
+        </li>
+      </ul>
+    </footer>
+  </body>
 </html>
