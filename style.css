@@ -1,0 +1,51 @@
+body {
+  background: var(--color-white);
+  color: var(--color-darkgray);
+  margin: 0;
+  font-family: var(--font-primary);
+  font-size: var(--fontsize-body);
+  line-height: 1.6;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+strong {
+  font-weight: var(--fontweight-bold);
+}
+/* Typo */
+
+h1,
+h2,
+h3 {
+  line-height: 1.1;
+  margin: 0;
+}
+
+h1 {
+  font-size: var(--fontsize-h1);
+}
+h2 {
+  font-size: var(--fontsize-h2);
+}
+h3 {
+  font-size: var(--fontsize-h3);
+}
+
+.section__title {
+  margin-bottom: 0.25em;
+}
+
+.section__title--intro {
+  font-weight: var(--fontweight-reg);
+}
+.section__subtitle {
+  margin: 0;
+  font-size: var(--fontsize-h3);
+}
+.section__subtitle--intro,
+.section__subtitle--about {
+  background: var(--color-turquoise);
+}

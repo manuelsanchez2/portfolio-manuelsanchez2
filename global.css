@@ -1,0 +1,35 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Custom Root Properties */
+
+:root {
+  --font-primary: "Montserrat", sans-serif;
+  --font-secondary: "Poppins", sans-serif;
+
+  --fontweight-reg: 300;
+  --fontweight-bold: 900;
+
+  --color-black: #303030;
+  --color-white: #fff;
+  --color-turquoise: #318ba2;
+  --color-gray: #7c8587;
+  --color-darkgray: #484848;
+
+  --fontsize-h1: 3rem;
+  --fontsize-h2: 2.25rem;
+  --fontsize-h3: 1.25rem;
+  --fontsize-body: 1rem;
+}
+
+@media (min-width: 800px) {
+  :root {
+    --fontsize-h1: 4.5rem;
+    --fontsize-h2: 3.75rem;
+    --fontsize-h3: 1.5rem;
+    --fontsize-body: 1.125rem;
+  }
+}
