@@ -7,11 +7,6 @@ body {
   line-height: 1.6;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-}
-
 strong {
   font-weight: var(--fontweight-bold);
 }
@@ -20,7 +15,7 @@ strong {
 h1,
 h2,
 h3 {
-  line-height: 1.1;
+  line-height: 1;
   margin: 0;
 }
 
@@ -34,18 +29,99 @@ h3 {
   font-size: var(--fontsize-h3);
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
+section {
+  padding: 3em 3.7em;
+}
+
 .section__title {
   margin-bottom: 0.25em;
 }
 
-.section__title--intro {
+.section__title--introduction {
   font-weight: var(--fontweight-reg);
 }
+
+.section__title--introduction strong {
+  display: block;
+}
+
 .section__subtitle {
   margin: 0;
   font-size: var(--fontsize-h3);
 }
-.section__subtitle--intro,
+
+.section__subtitle--introduction {
+  /* What we do here is that the turquoise only fits the content (only in small devices)  */
+  display: inline-block;
+}
+.section__subtitle--introduction,
 .section__subtitle--about {
   background: var(--color-turquoise);
+  font-family: var(--font-secondary);
+  margin-bottom: 0.8em;
+  padding: 0.25em 1rem;
 }
+
+.section__introduction--image {
+  box-shadow: var(--boxshadow);
+}
+
+/* Navigation  */
+
+nav {
+  display: none;
+}
+
+/* Intro section */
+
+.introduction {
+  position: relative;
+}
+
+@media (min-width: 600px) {
+  .introduction {
+    display: grid;
+    width: min-content;
+    margin: 0 auto;
+    grid-column-gap: 1em;
+    grid-template-areas:
+      "img title"
+      "img subtitle";
+
+    grid-template-columns: min-content max-content;
+  }
+
+  .section__introduction--image {
+    grid-area: img;
+    min-width: 250px;
+    z-index: 2;
+    position: relative;
+  }
+  /* Play with the left and the width calc */
+  .section__subtitle--introduction {
+    align-self: start;
+    grid-column: -1 / 1;
+    grid-row: 2;
+    text-align: right;
+    position: relative;
+    left: -1.5em;
+    width: calc(100% + 1.5em);
+  }
+}
+
+/* About me */
+
+/* .about-me__image {
+  display: block;
+} */
+
+/* Work  */
+
+/* .portfolio__image {
+  display: block;
+} */
