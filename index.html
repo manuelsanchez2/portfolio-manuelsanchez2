@@ -30,28 +30,29 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <!-- <div class="logo">
-        <img src="" alt="" />
-      </div> -->
-      <p>{Manuel}</p>
+    <header class="header">
+      <div class="header__logo">
+        <img src="assets/logo2.png" alt="logo" />
+      </div>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <!-- Navigations bar -->
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+          <li class="nav__item">
+            <a href="#services" class="nav__link">My Services</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About me</a>
+          </li>
+          <li class="nav__item">
+            <a href="#work" class="nav__link">My Work</a>
+          </li>
+        </ul>
+      </nav>
     </header>
-    <button class="nav-toggle" aria-label="toggle navigation">
-      <span class="hamburger"></span>
-    </button>
-    <!-- Navigations bar -->
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-        <li class="nav__item">
-          <a href="#services" class="nav__link">My Services</a>
-        </li>
-        <li class="nav__item">
-          <a href="#about" class="nav__link">About me</a>
-        </li>
-        <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
-      </ul>
-    </nav>
 
     <!-- Introduction -->
     <section class="introduction" id="home">
@@ -68,6 +69,13 @@
       Sanchez"
         class="section__introduction--image"
       />
+      <div class="section__link">
+        <a
+          class="section__link--pdf"
+          href="assets/CV-Manuel-Sanchez-September-2020.pdf"
+          >See Full CV</a
+        >
+      </div>
     </section>
 
     <!-- My Services -->
@@ -196,5 +204,7 @@
         </li>
       </ul>
     </footer>
+
+    <script src="js/index.js"></script>
   </body>
 </html>
