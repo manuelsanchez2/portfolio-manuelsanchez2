@@ -454,6 +454,5 @@ portfolio__item:focus .portfolio__image {
 
 .portfolio__image {
   margin: 0 auto;
-  padding: 2em 1em;
   border: solid 1px black;
 }
