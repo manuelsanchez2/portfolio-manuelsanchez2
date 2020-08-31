@@ -195,6 +195,25 @@ section {
   z-index: 1000;
 }
 
+.nav-open .nav {
+  transform: translateX(0);
+}
+
+.nav-open .nav-toggle {
+  position: fixed;
+}
+.nav-open .hamburger {
+  transform: rotate(0.625turn);
+}
+
+.nav-open .hamburger::before {
+  transform: rotate(90deg) translateX(-6px);
+}
+
+.nav-open .hamburger::after {
+  opacity: 0;
+}
+
 /* Create the hamburguer */
 
 .hamburger {
@@ -350,7 +369,7 @@ section {
 .portfolio {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 0.05em;
+  grid-gap: 0.35em;
   margin: 0 auto;
   max-width: 1200px;
 }
@@ -380,7 +399,7 @@ portfolio__item:focus .portfolio__image {
   background-color: var(--color-white);
   color: var(--color-turquoise);
   text-align: center;
-  padding: 1.5em 0;
+  padding-top: 1.2em;
   font-size: var(--fontsize-h3);
   margin-top: 1em;
 }
