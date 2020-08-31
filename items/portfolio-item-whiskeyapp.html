@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manuel Sánchez Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+      crossorigin="anonymous"
+    />
+
+    <!-- Monserrat Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Poppins Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../global.css" />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo">
+        <img src="../assets/logo2.png" alt="logo" />
+      </div>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <!-- Navigations bar -->
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="../index.html" class="nav__link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="../index.html#services" class="nav__link">My Services</a>
+          </li>
+          <li class="nav__item">
+            <a href="../index.html#about" class="nav__link">About me</a>
+          </li>
+          <li class="nav__item">
+            <a href="../index.html#work" class="nav__link">My Work</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Introduction -->
+    <section class="introduction" id="home">
+      <h1 class="section__title section__title--introduction">
+        Welcome to <strong>Whiskeymaniacs</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--introduction">
+        External Whiskey Data Base
+      </p>
+
+      <img
+        src="../assets/portfolio-1.png"
+        alt="a picture of the project Whiskeymaniacs"
+        class="section__introduction--image"
+      />
+    </section>
+
+    <div class="portfolio-item-individual">
+      <p>
+        Whiskeymaniacs started as a self challenge in order to put into practice
+        what I have learned during the week on using existent APIs. By using the
+        external data base on our app, you will be able to find some information
+        about your favourite whiskey in almost no time.
+      </p>
+      <!-- <img
+        class="portfolio__image"
+        src="../assets/portfolio-description.png"
+        alt=""
+      /> -->
+      <p>
+        Also one of the future implementations of the app could be setting up a
+        wish list, so that you can also keep record of what are the best
+        whiskies for you. See the whole repository
+        <a
+          href="https://github.com/manuelsanchez2/whiskie-database"
+          target="_blank"
+          >here</a
+        >.
+      </p>
+    </div>
+
+    <!-- Footer  -->
+    <footer class="footer">
+      <a href="mailto:manusansan22@gmail.com" class="footer__link"
+        >manusansan22@gmail.com</a
+      >
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://github.com/manuelsanchez2"
+            ><i class="fab fa-github"></i
+          ></a>
+        </li>
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://www.linkedin.com/in/manusanchez2/"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+        </li>
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://www.facebook.com/manu.sanchez.14606"
+            ><i class="fab fa-facebook-square"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="../index.js"></script>
+  </body>
+</html>

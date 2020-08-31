@@ -26,13 +26,13 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="global.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../global.css" />
+    <link rel="stylesheet" href="../style.css" />
   </head>
   <body>
     <header class="header">
       <div class="header__logo">
-        <img src="assets/logo2.png" alt="logo" />
+        <img src="../assets/logo2.png" alt="logo" />
       </div>
       <button class="nav-toggle" aria-label="toggle navigation">
         <span class="hamburger"></span>
@@ -41,16 +41,16 @@
       <nav class="nav">
         <ul class="nav__list">
           <li class="nav__item">
-            <a href="index.html" class="nav__link">Home</a>
+            <a href="../index.html" class="nav__link">Home</a>
           </li>
           <li class="nav__item">
-            <a href="index.html#services" class="nav__link">My Services</a>
+            <a href="../index.html#services" class="nav__link">My Services</a>
           </li>
           <li class="nav__item">
-            <a href="index.html#about" class="nav__link">About me</a>
+            <a href="../index.html#about" class="nav__link">About me</a>
           </li>
           <li class="nav__item">
-            <a href="index.html#work" class="nav__link">My Work</a>
+            <a href="../index.html#work" class="nav__link">My Work</a>
           </li>
         </ul>
       </nav>
@@ -59,39 +59,41 @@
     <!-- Introduction -->
     <section class="introduction" id="home">
       <h1 class="section__title section__title--introduction">
-        This is <strong>Doiche Living</strong>
+        Catch Em' all <strong>Pokedex</strong>
       </h1>
       <p class="section__subtitle section__subtitle--introduction">
-        Created with ReactJs
+        Which is your favourite one?
       </p>
 
       <img
-        src="assets/portfolio-3.png"
-        alt="a picture of the project Doiche Living"
+        src="../assets/portfolio-2.png"
+        alt="a picture of the project Pokedex"
         class="section__introduction--image"
       />
     </section>
 
     <div class="portfolio-item-individual">
       <p>
-        Doiche Living is a project created by a group of passionate people who
-        have something in common: they love Germany. That's why they started in
-        May 2019 the travel blog and tried to raise awareness of the beauty of
-        the country. The following step in their roadmap is the creation of the
-        app.
+        The Pokedex was a very fun project which I decided to build by using
+        Reactjs.
+        <strong>In this very case we were using two different APIs</strong>: one
+        for the general information, national-number of the pokemon and animated
+        sprite, and the other one for the more detailed information, such as
+        stats.
       </p>
-      <img
+      <!-- <img
         class="portfolio__image"
-        src="assets/portfolio-description.png"
+        src="../assets/portfolio-description.png"
         alt=""
-      />
+      /> -->
       <p>
-        Thanks to the app, the users will be able to keep in mind -and handy-
-        their wish list. Additionally,
-        <strong
-          >they will enjoy a fresh and modern interface given by a nice
-          colourful user experience</strong
-        >. The app is bound to be ready by ends of October 2020.
+        One of the latests implementation was the creation of a customized
+        loading screen, which fits perfect with the design and makes the user
+        feel more confortable while waiting until the data are fetched. See
+        repository
+        <a href="https://github.com/manuelsanchez2/pokedex" target="_blank"
+          >here</a
+        >
       </p>
     </div>
 
@@ -123,6 +125,6 @@
       </ul>
     </footer>
 
-    <script src="index.js"></script>
+    <script src="../index.js"></script>
   </body>
 </html>
