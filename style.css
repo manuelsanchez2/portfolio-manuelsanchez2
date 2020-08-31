@@ -435,3 +435,23 @@ portfolio__item:focus .portfolio__image {
   padding: 0.5em;
   font-size: var(--fontsize-h2);
 }
+
+/* Portfolio individual item  */
+
+.portfolio-item-individual {
+  padding: 0 2em 2em;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.portfolio-item-individual p {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.portfolio__image {
+  margin: 0 auto;
+  padding: 3em 1em;
+  border: solid 1px black;
+}
